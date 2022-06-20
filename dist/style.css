@@ -133,4 +133,72 @@ header button span:last-child {
 }
 .movie button:hover {
   filter: brightness(0.95);
+}
+
+.movies {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.4rem;
+}
+.movies h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+  margin-bottom: 1rem;
+}
+.movies div {
+  width: 30rem;
+  height: 60rem;
+  overflow: auto;
+}
+.movies div::-webkit-scrollbar {
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 5px;
+  border-radius: 10px;
+}
+.movies div::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+}
+.movies div ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+.movies div ul li {
+  background-color: crimson;
+  position: relative;
+  width: 265px;
+  height: 135px;
+  border-radius: 0.8rem;
+  padding: 1.6rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.movies div ul li span {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  margin-bottom: 0.5rem;
+}
+.movies div ul li strong {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2rem;
+}
+.movies div ul li button {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 3.6rem;
+  height: 3.6rem;
+  background: transparent;
+  transform: translateY(60%);
+  opacity: 0;
+  transition: all 0.3s;
+}
+.movies div ul li:hover button {
+  opacity: 1;
+  transform: translateY(0%);
 }/*# sourceMappingURL=style.css.map */
