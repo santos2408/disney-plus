@@ -43,9 +43,34 @@ button:hover {
   align-items: stretch;
   width: 100%;
   height: 100vh;
-  padding: 45px 130px 0;
+  padding: 4.5rem 13rem 0;
   background-image: linear-gradient(90.18deg, rgba(13, 22, 46, 0.7), 23.21%, rgba(13, 22, 46, 0.0001) 96.69%), url("/app/img/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6rem;
+}
+header button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  row-gap: 1rem;
+  width: 5rem;
+  background: transparent;
+}
+header button span {
+  width: 100%;
+  height: 4px;
+  display: block;
+  border-radius: 8px;
+  background-color: var(--primary-color);
+}
+header button span:last-child {
+  width: 50%;
 }/*# sourceMappingURL=style.css.map */

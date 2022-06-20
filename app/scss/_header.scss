@@ -1,0 +1,30 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  margin-bottom: 6rem;
+
+  button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 1rem;
+    
+    width: 5rem;
+
+    background: transparent;
+
+    span {
+      width: 100%;
+      height: 4px;
+      display: block;
+      border-radius: 8px;
+      background-color: var(--primary-color);
+
+      &:last-child {
+        width: 50%;
+      }
+    }
+  }
+}
